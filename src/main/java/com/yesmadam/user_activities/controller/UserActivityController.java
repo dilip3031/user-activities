@@ -29,6 +29,8 @@ public class UserActivityController {
         return ResponseEntity.ok(response);
     }
 
+
+    //This api is use to gat count. this will help into get page numbers
     @GetMapping("/count/actions")
     public ResponseEntity<?> getUserActionsCount(@RequestParam(required = false) Long userId, @RequestParam(required = false) UserAction userAction) {
         // Fetch user activity details with pagination
